@@ -1,12 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import ProcessorSpeedChecker from './test.jsx'
+import CPUInfo from './pages/cpuInfo.jsx'
 import './index.css'
 import App from './App.jsx'
+import Network from './test.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-    <ProcessorSpeedChecker/>
+    <CPUInfo/>
+    <Network/>
   </StrictMode>,
 )
